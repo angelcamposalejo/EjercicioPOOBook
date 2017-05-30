@@ -1,6 +1,7 @@
 #pragma once  //______________________________________ EjercicioPOO.h  
 #include "Resource.h"
 #include "Book.h"
+#define contador 3
 class EjercicioPOO: public Win::Dialog
 {
 public:
@@ -11,6 +12,7 @@ public:
 	{
 	}
 	void DisplayInformacion(Book&book);
+	wchar_t*GetAutor(int indice);
 protected:
 	//______ Wintempla GUI manager section begin: DO NOT EDIT AFTER THIS LINE
 	void InitializeGui()

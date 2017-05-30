@@ -14,3 +14,7 @@ Cambio en la asignación de valores al objeto
 <h3>Version 3</h3>
 <h5>30/05/2017</h5>
 Versión con asignación de dos objetos de la clase book con la asignación de sus características mostrados al usuario mediante <code>MessageBox<code> llenado en un método de tipo <code>VOID()</code>.
+
+<h3>Version 4</h3>
+<h5>30/05/2017</h5>
+Versión con llenado con n objetos definidos, llenado de autor mediante un método que evalúa el indice y retorna el autor correspondiente.
