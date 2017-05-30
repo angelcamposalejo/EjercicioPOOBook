@@ -2,7 +2,7 @@
 #include "Resource.h"
 #include "Book.h"
 #define contador 3
-class EjercicioPOO : public Win::Dialog
+class EjercicioPOO: public Win::Dialog
 {
 public:
 	EjercicioPOO()
@@ -15,7 +15,7 @@ public:
 	wchar_t*GetAutor(int indice);
 protected:
 	//______ Wintempla GUI manager section begin: DO NOT EDIT AFTER THIS LINE
-	Win::Textbox tbxSalida;
+	Win::Textbox tbx1;
 protected:
 	Win::Gdi::Font fontArial014A;
 	void GetDialogTemplate(DLGTEMPLATE& dlgTemplate)
@@ -28,9 +28,9 @@ protected:
 	void InitializeGui()
 	{
 		this->Text = L"EjercicioPOO";
-		tbxSalida.Create(WS_EX_CLIENTEDGE, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | ES_AUTOHSCROLL | ES_MULTILINE | ES_READONLY | ES_LEFT | ES_WINNORMALCASE, 17, 8, 308, 111, hWnd, 1000);
+		tbx1.Create(WS_EX_CLIENTEDGE, NULL, WS_CHILD | WS_TABSTOP | WS_VISIBLE | ES_AUTOHSCROLL | ES_MULTILINE | ES_READONLY | ES_LEFT | ES_WINNORMALCASE, 17, 8, 308, 111, hWnd, 1000);
 		fontArial014A.Create(L"Arial", 14, false, false, false, false);
-		tbxSalida.Font = fontArial014A;
+		tbx1.Font = fontArial014A;
 	}
 	//_________________________________________________
 	void Window_Open(Win::Event& e);

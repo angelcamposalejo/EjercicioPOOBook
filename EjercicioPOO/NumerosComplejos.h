@@ -10,5 +10,8 @@ public:
 	double angulo = 0.0;
 	double GetModulo();
 	double GetAngulo();
+	wstring signo= L"+";
+	wstring GetText();
+	wstring GetConjugado();
 };
 
