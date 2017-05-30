@@ -22,3 +22,7 @@ Versión con llenado con n objetos definidos, llenado de autor mediante un méto
 <h3>Version 5</h3>
 <h5>30/05/2017</h5>
 Versión con dos objetos de la clase book donde el segundo recibe los valores del primero mas una adición de valores.
+
+<h3>Version 6</h3>
+<h5>30/05/2017</h5>
+Crear clase NumerosComplejos sus objetos y metodos para calcular el modulo y en angulo.
