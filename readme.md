@@ -30,3 +30,7 @@ Crear clase NumerosComplejos sus objetos y metodos para calcular el modulo y en 
 <h3>Version 7</h3>
 <h5>30/05/2017</h5>
 Versión que muestra en un textbox x y su conjugado y.
+
+<h3>Version 8</h3>
+<h5>30/05/2017</h5>
+Practica de try y catch.

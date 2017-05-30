@@ -17,11 +17,22 @@ void EjercicioPOO::Window_Open(Win::Event& e)
 	//wstring texto;
 	//Sys::Format(texto, L"%g,%g", modulo, angulo);
 	//this->MessageBox(texto, L"Numeros complejos", MB_OK);
-	this->tbxSalida.Text = L"x= ";
-	this->tbxSalida.Text += x.GetText();
-	this->tbxSalida.Text += L"\r\ny= ";
-	wstring s = x.GetConjugado();
-	this->tbxSalida.Text += x.GetText();
+	//this->tbxSalida.Text = L"x= ";
+	//this->tbxSalida.Text += x.GetText();
+	//this->tbxSalida.Text += L"\r\ny= ";
+	//wstring s = x.GetConjugado();
+	//this->tbxSalida.Text += x.GetText();
+	try
+	{
+		double y = 50.0;
+		double z = 0.0;
+		if (z == 0)throw L"No se puede dividir entre cero";
+		double x = y / z;
+	}
+	catch (wchar_t*info)
+	{
+		this->MessageBox(info, L"Library", MB_OK | MB_ICONERROR);
+	}
 }
 void EjercicioPOO::DisplayInformacion(Book&book)
 {
