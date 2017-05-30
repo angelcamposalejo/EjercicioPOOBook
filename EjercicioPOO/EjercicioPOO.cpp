@@ -11,12 +11,14 @@ void EjercicioPOO::Window_Open(Win::Event& e)
 {
 	Book book;
 	book.numPaginas = 100;
-	book.precio = 235.90;
+	book.precio = 100.90;
 	book.autor = L"Shakespeare";
 	DisplayInformacion(book);
-	book.Reset();
-	book.autor = L"Nery Allen";
-	DisplayInformacion(book);
+	Book bookTwo=book;
+	bookTwo.precio /= 2.0;
+	bookTwo.numPaginas -= 50;
+	bookTwo.autor += L"(Review)";
+	DisplayInformacion(bookTwo);
 }
 void EjercicioPOO::DisplayInformacion(Book&book)
 {

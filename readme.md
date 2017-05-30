@@ -18,3 +18,7 @@ Versión con asignación de dos objetos de la clase book con la asignación de s
 <h3>Version 4</h3>
 <h5>30/05/2017</h5>
 Versión con llenado con n objetos definidos, llenado de autor mediante un método que evalúa el indice y retorna el autor correspondiente.
+
+<h3>Version 5</h3>
+<h5>30/05/2017</h5>
+Versión con dos objetos de la clase book donde el segundo recibe los valores del primero mas una adición de valores.
