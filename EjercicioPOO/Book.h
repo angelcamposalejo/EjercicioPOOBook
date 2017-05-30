@@ -9,5 +9,7 @@ public:
 	wstring autor;
 	int year;
 	double precio;
+	void Reset();
+	void IncrementarPrecio(double porcentaje);
 };
 

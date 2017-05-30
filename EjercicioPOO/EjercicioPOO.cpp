@@ -9,14 +9,14 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE , LPTSTR cmdLine, int cmdSh
 
 void EjercicioPOO::Window_Open(Win::Event& e)
 {
-	Book book[contador];
-	for (int i = 0; i < contador; i++)
-	{
-		book[i].numPaginas = 10 * (i + 1);
-		book[i].precio = 2.0*book[i].numPaginas;
-		book[i].autor = GetAutor(i);
-		DisplayInformacion(book[i]);
-	}
+	Book book;
+	book.numPaginas = 100;
+	book.precio = 235.90;
+	book.autor = L"Shakespeare";
+	DisplayInformacion(book);
+	book.Reset();
+	book.autor = L"Nery Allen";
+	DisplayInformacion(book);
 }
 void EjercicioPOO::DisplayInformacion(Book&book)
 {
