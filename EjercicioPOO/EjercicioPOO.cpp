@@ -8,16 +8,21 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE , LPTSTR cmdLine, int cmdSh
 
 void EjercicioPOO::Window_Open(Win::Event& e)
 {
-	Book book;
-	book.precio = 198.50;
-	book.numPaginas = 220,
-	book.autor = L"Edgar Alan";
-	book.color = RGB(0, 0, 200);
-	book.numPaginas++;
-	book.precio *= 2.0;
+	Book book[2];
+	book[0].precio = 198.50;
+	book[0].numPaginas = 220,
+	book[0].autor = L"Edgar Alan";
+	book[0].color = RGB(0, 0, 200);
+	book[1].numPaginas++;
+	book[1].precio += 12.5;
+	book[1].autor = L"Harry Potter";
+	DisplayInformacion(book[0]);
+	DisplayInformacion(book[1]);
+}
+void EjercicioPOO::DisplayInformacion(Book&book)
+{
 	wstring texto;
-	Sys::Format(texto, L"El libro %s tiene %d paginas y cuesta %22f", book.autor.c_str(), book.numPaginas, book.precio);
-	this->Text = texto;
-
+	Sys::Format(texto, L"El libro %s tiene %d paginas y cuesta %.2f", book.autor.c_str(), book.numPaginas, book.precio);
+	this->MessageBox(texto, L"Informacion del libro", MB_OK);
 }
 

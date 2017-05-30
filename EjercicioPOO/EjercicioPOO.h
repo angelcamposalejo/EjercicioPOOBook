@@ -1,5 +1,6 @@
 #pragma once  //______________________________________ EjercicioPOO.h  
 #include "Resource.h"
+#include "Book.h"
 class EjercicioPOO: public Win::Dialog
 {
 public:
@@ -9,6 +10,7 @@ public:
 	~EjercicioPOO()
 	{
 	}
+	void DisplayInformacion(Book&book);
 protected:
 	//______ Wintempla GUI manager section begin: DO NOT EDIT AFTER THIS LINE
 	void InitializeGui()
