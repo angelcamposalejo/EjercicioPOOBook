@@ -3,6 +3,8 @@ class NumerosComplejos
 {
 public:
 	NumerosComplejos(void);
+	NumerosComplejos(double real);
+	NumerosComplejos(double real, double imaginario);
 	~NumerosComplejos(void);
 	double real = 0.0;
 	double imaginario = 0.0;

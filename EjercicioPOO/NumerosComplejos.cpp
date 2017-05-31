@@ -4,6 +4,18 @@
 
 NumerosComplejos::NumerosComplejos(void)
 {
+	real = 0.0;
+	imaginario = 0.0;
+}
+NumerosComplejos::NumerosComplejos(double real)
+{
+	this->real = real;
+	imaginario = 0.0;
+}
+NumerosComplejos::NumerosComplejos(double real, double imaginario)
+{
+	this->real = real;
+	this->imaginario = imaginario;
 }
 
 
