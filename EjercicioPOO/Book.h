@@ -5,11 +5,15 @@ public:
 	Book(void);
 	~Book(void);
 	COLORREF color;
-	int numPaginas;
+	
 	wstring autor;
 	int year;
 	double precio;
 	void Reset();
 	void IncrementarPrecio(double porcentaje);
+	void SetNumeroPaginas(int numPaginas);
+	int GetNumeroPaginas();
+private:
+	int numPaginas;
 };
 

@@ -9,9 +9,9 @@ int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE, LPTSTR cmdLine, int cmdSho
 
 void EjercicioPOO::Window_Open(Win::Event& e)
 {
-	NumerosComplejos x;
-	x.real = 2.0;
-	x.imaginario = 3.0;
+	//NumerosComplejos x;
+	//x.real = 2.0;
+	//x.imaginario = 3.0;
 	//const double modulo = x.GetModulo();
 	//const double angulo = x.GetAngulo();
 	//wstring texto;
@@ -22,23 +22,21 @@ void EjercicioPOO::Window_Open(Win::Event& e)
 	//this->tbxSalida.Text += L"\r\ny= ";
 	//wstring s = x.GetConjugado();
 	//this->tbxSalida.Text += x.GetText();
-	try
-	{
-		double y = 50.0;
-		double z = 0.0;
-		if (z == 0)throw L"No se puede dividir entre cero";
-		double x = y / z;
-	}
-	catch (wchar_t*info)
-	{
-		this->MessageBox(info, L"Library", MB_OK | MB_ICONERROR);
-	}
+	Book a,b,c;
+	a.SetNumeroPaginas(10);
+	b.SetNumeroPaginas(20);
+	b.SetNumeroPaginas(2);
+	c.SetNumeroPaginas(1000);
+	wstring texto;
+	Sys::Format(texto, L"%d,%d,%d", a.GetNumeroPaginas(),b.GetNumeroPaginas(),c.GetNumeroPaginas());
+	this->tbxSalida.Text = texto;
+	
 }
 void EjercicioPOO::DisplayInformacion(Book&book)
 {
-	wstring texto;
-	Sys::Format(texto, L"El libro %s tiene %d paginas y cuesta %.2f", book.autor.c_str(), book.numPaginas, book.precio);
-	this->MessageBox(texto, L"Informacion del libro", MB_OK);
+	//wstring texto;
+	//Sys::Format(texto, L"El libro %s tiene %d paginas y cuesta %.2f", book.autor.c_str(), book.numPaginas, book.precio);
+	//this->MessageBox(texto, L"Informacion del libro", MB_OK);
 }
 wchar_t*EjercicioPOO::GetAutor(int indice)
 {

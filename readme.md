@@ -34,3 +34,7 @@ Versión que muestra en un textbox x y su conjugado y.
 <h3>Version 8</h3>
 <h5>30/05/2017</h5>
 Practica de try y catch.
+
+<h3>Version 9</h3>
+<h5>30/05/2017</h5>
+Practica de propiedades de clases, ejercicio set y get.

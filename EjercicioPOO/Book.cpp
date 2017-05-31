@@ -14,6 +14,16 @@ Book::Book(void)
 Book::~Book(void)
 {
 }
+void Book::SetNumeroPaginas(int numPaginas)
+{
+	if (numPaginas <= 5)return;
+	if (numPaginas > 1000)return;
+	this->numPaginas = numPaginas;
+}
+int Book::GetNumeroPaginas()
+{
+	return numPaginas;
+}
 void Book::Reset()
 {
 	color = RGB(0, 0, 0);
