@@ -42,3 +42,7 @@ Practica de propiedades de clases, ejercicio set y get.
 <h3>Version 10</h3>
 <h5>30/05/2017</h5>
 Practica de propiedades de clases, ejercicio utilizando set y get ademas usando <code>_declspec</code> y <code>property</code>.
+
+<h3>Version 11</h3>
+<h5>30/05/2017</h5>
+Practica de multiconstructores  utilizando un constructor por defecto sin ningún parámetro y con un constructor que recibe un parámetro de tipo entero.

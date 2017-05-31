@@ -3,6 +3,7 @@ class Book
 {
 public:
 	Book(void);
+	Book(int numPaginas);
 	~Book(void);
 	COLORREF color;
 	

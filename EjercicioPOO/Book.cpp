@@ -4,10 +4,11 @@
 
 Book::Book(void)
 {
-	color = RGB(0, 0, 0);
-	numPaginas = 0;
-	year = 1990;
-	precio = 0.0;
+	this->numPaginas = 0;
+}
+Book::Book(int numPaginas)
+{
+	this->numPaginas = numPaginas;
 }
 
 
@@ -16,8 +17,8 @@ Book::~Book(void)
 }
 void Book::SetNumeroPaginas(int numPaginas)
 {
-	if (numPaginas <= 5)return;
-	if (numPaginas > 1000)return;
+	if (numPaginas <= 50)throw L"A book must have at least 50 pages";
+	if (numPaginas > 100)throw L"A book must have at the most 100 pages";
 	this->numPaginas = numPaginas;
 }
 int Book::GetNumeroPaginas()
