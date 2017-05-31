@@ -38,3 +38,7 @@ Practica de try y catch.
 <h3>Version 9</h3>
 <h5>30/05/2017</h5>
 Practica de propiedades de clases, ejercicio set y get.
+
+<h3>Version 10</h3>
+<h5>30/05/2017</h5>
+Practica de propiedades de clases, ejercicio utilizando set y get ademas usando <code>_declspec</code> y <code>property</code>.
