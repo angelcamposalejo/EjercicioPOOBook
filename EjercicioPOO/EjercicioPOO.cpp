@@ -22,11 +22,10 @@ void EjercicioPOO::Window_Open(Win::Event& e)
 	//this->tbxSalida.Text += L"\r\ny= ";
 	//wstring s = x.GetConjugado();
 	//this->tbxSalida.Text += x.GetText();
-	Book bookA;
-	bookA.NumPaginas = 52;
-	Book bookB(20);
+	Book x[3],y(599);
+	for (int i = 0; i < 3; i++)x[i].NumPaginas = i + 80;
 	wstring texto;
-	Sys::Format(texto, L"%d,%d", bookA.GetNumeroPaginas(),bookB.GetNumeroPaginas());
+	Sys::Format(texto, L"%d,%d,%d,%d", x[0].GetNumeroPaginas(),x[1].GetNumeroPaginas(),x[2].GetNumeroPaginas(),y.GetNumeroPaginas());
 	this->tbxSalida.Text = texto;
 	
 }
